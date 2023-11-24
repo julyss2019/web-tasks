@@ -5,17 +5,27 @@
     <title>Title</title>
 </head>
 <style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
     #head_bar {
         background-color: rgb(255, 133, 0);
         height: 4px;
         width: 100%;
     }
 
-    #nav_bar {
+    ul {
+        display: flex;
+        align-content: start;
+    }
+
+    nav {
         display: flex;
     }
 
-    a {
+    li {
         display: flex;
         color: black;
         height: 60px;
@@ -24,7 +34,7 @@
         justify-content: center;
     }
 
-    a:hover {
+    li:hover {
         color: rgb(255, 133, 0);
         background-color: rgb(238, 238, 238);
     }
@@ -37,13 +47,15 @@
 </style>
 <body>
 <div id="head_bar"></div>
-<div id="nav_bar">
-    <a>新浪导航</a>
-    <a>手机新浪网</a>
-    <a>移动客户端</a>
-    <a>微博</a>
-    <a>三个字</a>
-</div>
+<nav>
+    <ul>
+        <li>新浪导航</li>
+        <li>手机新浪网</li>
+        <li>移动客户端</li>
+        <li>微博</li>
+        <li>三个字</li>
+    </ul>
+</nav>
 <div id="bottom_bar"></div>
 </body>
 </html>
